@@ -361,9 +361,11 @@ body {
 .reveal .slides section pre code {
   text-shadow: none;
 }
+/*
 .reveal .slides section section {
   background-image: url("../../css/imgs/bg-dark.png");
 }
+*/
 .reveal .slides section h1,
 .reveal .slides section h2 {
   color: #cf3;
