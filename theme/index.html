@@ -87,7 +87,7 @@
 
   <script>
     var protocol = window.location.protocol,
-        pathname = window.location.pathname.substring(0, window.location.pathname.indexOf('index.html')),
+        pathname = window.location.pathname.replace(/index\.html$/, ''),
         host = window.location.host,
         readmeLocation = protocol + "//" + host + pathname;
 
