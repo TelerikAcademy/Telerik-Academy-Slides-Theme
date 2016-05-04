@@ -12,7 +12,7 @@
 <!-- attr: {id: 'table-of-contents'} -->
 # Table of Contents
 - Code samples
-  - Variuous languages
+  - Various languages
 - Bullets
   - Nested bullets
 - Tables
@@ -40,7 +40,6 @@ namespace Test
 	}
 }
 ```
-
 <!-- attr: { hasScriptWrapper:true } -->
 # C++ code demo
 - Here is the code
@@ -78,7 +77,7 @@ var controller = (function(){
 <!-- section start -->
 <!-- attr: {style: 'font-size:42px'} -->
 # Categories of Operators in C++
-  
+
 | Category             | Operators                               |
 | -------------------- | --------------------------------------- |
 | Arithmetic           | `+` `-` `*` `/` `%` `++` `--`           |
@@ -136,7 +135,7 @@ to `true`
 *   The result of OR is:
     *   `true` if any of the operands is `true`
     *   `false` if all the operands are `false`
-    
+
 | Operation          | Result     |
 | :----------------: | ---------- |
 | false **II** false | **false**  |
@@ -149,20 +148,20 @@ to `true`
 *   The result of AND is:
     *   `true` only if all of the operands are `true`
     *   `false` if any of the operands is `false`
-    
+
 | Operation          | Result     |
 | :----------------: | ---------- |
 | false **&&** false | **false**  |
 | false **&&** true  | **false**  |
 | true **&&** false  | **false**  |
 | true **&&** true   | **true**   |
-    
+
 #   Logical Operators - XOR
 
 *   The result of XOR is:
     *   `true` if the two operands have different values
     *   `false` if the two operands have equal values
-    
+
 | Operation         | Result     |
 | :---------------: | ---------- |
 | false **^** false | **false**  |
@@ -209,7 +208,7 @@ cout << ((5>7) ^ (a==b)) << endl; // false
 #   Bitwise Operators - OR
 
 *   Much like logical OR, but bit by bit:
-  
+
 | Operation | Result bit |
 | :-------: | ---------- |
 | 0 **I** 0 | 0          |
@@ -220,7 +219,7 @@ cout << ((5>7) ^ (a==b)) << endl; // false
 #   Bitwise Operators - AND
 
 *   Much like logical AND, but bit by bit:
-  
+
 | Operation | Result bit |
 | :-------: | ---------- |
 | 0 **&** 0 | 0          |
@@ -232,7 +231,7 @@ cout << ((5>7) ^ (a==b)) << endl; // false
 #   Bitwise Operators - XOR
 
 *   Much like logical XOR, but bit by bit:
-  
+
 | Operation | Result bit |
 | :-------: | ---------- |
 | 0 **^** 0 | 0          |
@@ -267,7 +266,7 @@ cout << (a >> 1) << endl;     // 00000000 00000001
 *   Bitwise shift operators (`<<` and `>>`) are performed on integer numbers
     *   They move the bits by provided number to the left or right
     *   _Example:_
-    
+
 | Operation  | Result | Explanation |
 | :--------: | ------ | ------------------------------------- |
 | 7 **<<** 2 | 28      | **0000 0111** is shifted 2 bits to the left and becomes **0001 1100** |
