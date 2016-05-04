@@ -1,9 +1,7 @@
 <!-- section start -->
-
 <!-- attr: {id: 'title', class: 'slide-title', hasScriptWrapper: true} -->
-
-#   Operators and Expression
-##    Bitwise, Logical, Comparison
+# Demo presentation with all kinds of examples
+## Code samples, bullets, tables, ...
 <div class="signature">
     <p class="signature-course">C++ Fundamentals</p>
     <p class="signature-initiative">Telerik Algo Academy</p>
@@ -12,45 +10,74 @@
 
 <!-- section start -->
 <!-- attr: {id: 'table-of-contents'} -->
-#   Table of Contents
-
-*   Logical operators
-    *   `||`, `&&`, `!`
-*   Comparison operators
-    *   `>`, `>=`, `<`, `<=`, `==`, `!=`
-*   Bitwise operators
-    *   `|`, `&`, `~`, `^`, `<<`, `>>`
-*   Other operators
-    *   Arithmetic operators
-    *   Assignment operators
-*   Operator priority
+# Table of Contents
+- Code samples
+  - Variuous languages
+- Bullets
+  - Nested bullets
+- Tables
 
 <!-- section start -->
-
 <!-- attr: {class: 'slide-section', id: 'operators', showInPresentation: true} -->
-<!-- #   Operators in C++
-##    Arithmetic, Logical, Comparison, Assignment, etc... -->
+# Code samples
+## C#, C++, JavaScript, ...
 
-#   What is an Operator?
+<!-- attr: { hasScriptWrapper:true } -->
+# C# code demo
+- Here is the code
 
-*   Operator is an operation performed over data at runtime
-    *   Takes on or more arguments (operands)
-    *   Produces a new value
-*   Operators have precedence
-    *   Precedence defines which operation will be evaluated first
-*   Expressions are sequences of operators and operands that are evaluated to a single value
+```cs
+using System;
 
-#   Operators in C++
+namespace Test
+{
+	class Task
+	{
+		static void Main()
+		{
+			Console.WriteLine("A number: " + 5);
+		}
+	}
+}
+```
 
-*   Operators in C++
-    *   **Unary** operators - take one operand
-    *   **Binary** operators- take two operands
-    *   The **Ternary** operator (`?:`) - takes three operands
-*   Except for the assignment operators, all binary operators are left-associative
-*   The assignment operators and the ternary operator (?:) are right-associative
+<!-- attr: { hasScriptWrapper:true } -->
+# C++ code demo
+- Here is the code
 
+```cs
+#include<iostream>
+#include<random>
+
+int main()
+{
+	std::mt19937_64 rng {std::random_device{}()};
+	std::cout << "A number: " << rng() << '\n';
+	return 0;
+}
+```
+
+<!-- attr: { hasScriptWrapper:true } -->
+# JavaScript code demo
+- Here is the code
+
+```js
+var controller = (function(){
+	function get() {
+	}
+	function put() {
+	}
+
+	return {
+		get: get,
+		put: put
+	};
+}());
+```
+
+<!-- section start -->
 <!-- attr: {style: 'font-size:42px'} -->
-#   Categories of Operators in C++
+# Categories of Operators in C++
   
 | Category             | Operators                               |
 | -------------------- | --------------------------------------- |
@@ -61,52 +88,6 @@
 | Assignment           | `=` `+=` `-=` `*=` `/=` `&=` `^=` `>>=` |
 | String concat        | `+`                                     |
 | Other                | `.` `[]` `()` `?:` `new`                |
-
-<!-- section start -->
-
-<!-- attr: {class: 'slide-section', id: 'arithmetic-operators',showInPresentation:true } -->
-<!-- #   Arithmetic Operators 
-##    Like in math -->
-
-#   Arithmetic Operators
-
-*   Arithmetic operators `+`, `-`, `*` are as in math
-*   Division operator `/`
-    *   On **integers** returns **integer** (without rounding) or **exception**
-    *   On **real numbers** returns **real number**,  **inf** or **nan**
-*   Remainder operator `%` returns the remainder from division of integers
-*   The `++`operator increments a variable with `1`
-
-<!-- attr: { hasScriptWrapper: true} -->
-#   Arithmetic Operators - Examples
-
-*  _Example:_ Perimeter and area of a square
-
-```cpp
-int squarePerimeter = 17;
-double squareSide = squarePerimeter / 4.0;
-double squareArea = squareSide * squareSide;
-cout << squareSide << endl; //prints 4.25
-
-cout << squareArea << endl; // prints 18.0625
-```
-<!-- .element: style="font-size:1.05rem" -->
-
-*   _Example:_ Arithmetic operators with integer numbers
-
-```cpp
-int a = 5;
-int b = 4;
-cout << a + b << endl; //prints 9
-cout << a + b++ << endl; //prints 9
-cout << a + b << endl; // prints 10
-cout << a + (++b) << endl; //prints 11
-cout << a + b << endl; // prints 11
-
-cout << 12 / 3 << endl; // 4
-cout << 11 / 3 << endl; // 3
-```
-<!-- .element: style="font-size:1.1rem" -->
 
 <!-- attr: { hasScriptWrapper: true, showInPresentation: true} -->
 <!-- #   Arithmetic Operators - Examples -->
@@ -365,11 +346,11 @@ cout << (x /= 2) << endl; // 5
 *   The `new` operator is used to **create new objects**
 
 <!-- attr: {class: 'slide-section', showInPresentation: true} -->
-<!-- #   Other Operators -->
+<!-- # Other Operators -->
 ##    Live Demo
 
 <!-- section start -->
 
-<!-- attr: {class: 'slide-questions', id:"questions"} -->
-#   Operators and Expression
-##    Questions
+<!-- attr: {class: 'slide-questions', id:'questions'} -->
+# Demo presentation with all kinds of examples
+## Questions
