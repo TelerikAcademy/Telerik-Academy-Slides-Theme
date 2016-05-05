@@ -351,6 +351,9 @@ body {
   text-align: left;
   text-shadow: 3px 3px 10px #000;
 }
+.reveal .slides section ul {
+  width: 100%;
+}
 .reveal .slides section li li {
   font-size: 0.9em;
 }
@@ -361,11 +364,9 @@ body {
 .reveal .slides section pre code {
   text-shadow: none;
 }
-/*
 .reveal .slides section section {
   background-image: url("../../css/imgs/bg-dark.png");
 }
-*/
 .reveal .slides section h1,
 .reveal .slides section h2 {
   color: #cf3;

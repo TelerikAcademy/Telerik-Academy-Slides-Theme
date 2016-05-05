@@ -31,13 +31,14 @@ using System;
 
 namespace Test
 {
-	class Task
-	{
-		static void Main()
-		{
-			Console.WriteLine("A number: " + 5);
-		}
-	}
+  class Task
+  {
+    static void Main()
+    {
+      string str = "This is a string";
+      Console.WriteLine(str + 5);
+    }
+  }
 }
 ```
 <!-- attr: { hasScriptWrapper:true } -->
@@ -48,29 +49,41 @@ namespace Test
 #include<iostream>
 #include<random>
 
+void compare(int x, int y){
+  return x - y;
+}
+
 int main()
 {
-	std::mt19937_64 rng {std::random_device{}()};
-	std::cout << "A number: " << rng() << '\n';
-	return 0;
+    std::mt19937_64 rng {std::random_device{}()};
+    std::cout << "A number: " << rng() << '\n';
+    std::cout << compare(5, 6) << endl;
+    return 0;
 }
 ```
 
-<!-- attr: { hasScriptWrapper:true } -->
+<!-- attr: { hasScriptWrapper:true, style: 'font-size: 0.9em' } -->
 # JavaScript code demo
 - Here is the code
 
-```js
-var controller = (function(){
-	function get() {
-	}
-	function put() {
-	}
+```javascript
+var test = (function(){
+    var name = "Doncho";
+    let age = 25;
+    function get() {
+      return {
+        name, age
+      };
+    }
+    function put(name, age) {
+      name = name;
+      age = age;
+    }
 
-	return {
-		get: get,
-		put: put
-	};
+    return {
+        get: get,
+        put: put
+    };
 }());
 ```
 
