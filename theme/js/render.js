@@ -14,6 +14,7 @@ var render = (function () {
       if (g3 && g3.toLowerCase() === 'true') {
         return g1.replace('<!--', '').replace('-->', '').trim();
       }
+	  return g1;
     });
 
     var regexLinks = /(\[.*\]\(#)(.*)(\))/gi;
